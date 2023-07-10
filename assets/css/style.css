@@ -41,6 +41,10 @@ nav{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -254,4 +258,17 @@ nav a{
 
 .partner p{
     margin: 1rem 0 2rem 0;
+}
+
+.operation{
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.operation  img{
+    width: 100%;
+}
+
+.operation h5{
+    margin: 1rem 0;
 }
