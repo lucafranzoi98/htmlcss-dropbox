@@ -9,7 +9,7 @@
     --db-accent: #0061ff;
     --db-primary: #b5d0e6;
     --db-secondary: #61082b;
-    --db-background-designit: #f5f4f4;
+    --db-background-member: #f5f4f4;
     --db-text-font: 'Open Sans', sans-serif;
     --db-text-size: .875rem;
     --db-title-font: 'Open Sans Extrabold', sans-serif;
@@ -26,6 +26,14 @@
     --db-description-font: 'Open Sans', sans-serif;
     --db-description-size: .75rem;
     --db-description-color: #5e5e5e;
+    --db-member-1: #a3d39a;
+    --db-member-2: #60082a;
+    --db-member-3: #0193cf;
+    --db-member-4: #ff1d1d;
+    --db-member-5: #d5001f;
+    --db-member-6: #b5d1e7;
+    --db-member-7: #0d2580;
+    --db-member-8: #ffd931;
 }
 
 header{
@@ -146,6 +154,19 @@ label{
 .default-link{
     color: #0000EE;
     text-decoration: underline;
+}
+
+.relative{
+    position: relative;
+}
+
+svg{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
 }
 /* #endregion utilities */
 
@@ -272,4 +293,45 @@ nav a{
 
 .operation h5{
     margin: 1rem 0;
+}
+
+.members-section{
+    margin-top: 7rem;
+}
+
+.member-logo{
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+.m1{
+    background-color: var(--db-member-1);
+}
+
+.m2{
+    background-color: var(--db-member-2);
+}
+
+.m3{
+    background-color: var(--db-member-3);
+}
+
+.m4{
+    background-color: var(--db-member-4);
+}
+
+.m5{
+    background-color: var(--db-member-5);
+}
+
+.m6{
+    background-color: var(--db-member-6);
+}
+
+.m7{
+    background-color: var(--db-member-7);
+}
+
+.m8{
+    background-color: var(--db-member-8);
 }
