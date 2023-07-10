@@ -58,14 +58,23 @@ a{
     padding: 0.25rem 0.75rem;
 }
 
+.btn-central{
+    text-align: center;
+    width: 100%;
+    background-color: var(--db-accent);
+    color: white;
+    padding: 0.5rem 0;
+    margin: 2rem 0;
+}
+
 .container-lg{
-    width: 63%;
+    width: 67%;
     margin: auto;
     height: 570px;
 }
 
 .container-s{
-    width: 52%;
+    width: 57%;
     margin: auto;
 }
 
@@ -113,20 +122,18 @@ section{
     width: calc(100% / 12 * 8);
 }
 
-p{
+p, li, span, label{
     font-family: var(--db-text-font);
     font-size: var(--db-text-size);
 }
 
 label{
-    font-family: var(--db-text-font);
-    font-size: var(--db-text-size);
     margin-right: 2rem;
 }
 
-span{
-    font-family: var(--db-text-font);
-    font-size: var(--db-text-size);
+.default-link{
+    color: #0000EE;
+    text-decoration: underline;
 }
 /* #endregion utilities */
 
@@ -198,4 +205,24 @@ nav a{
 
 .card-description > div{
     margin: 0.75rem 0;
+}
+
+.fa-ul{
+    --fa-li-margin: 1.5rem;
+    margin-top: 2rem;
+ }
+
+ .fa-ul > li{
+    margin: 1rem 0;
+ }
+
+ .card-line{
+    margin: 2rem 0;
+    border: 0;
+    border-top: 2px solid rgb(209, 209, 209);
+    width: 50px;
+}
+
+.fa-check{
+    color: var(--db-accent);
 }
