@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #region utilities */
+:root{
+    --db-accent: #0061ff;
+    --db-primary: #b5d0e6;
+    --db-secondary: #61082b;
+    --db-background-designit: #f5f4f4;
+    --db-text-font: 'Open Sans', sans-serif;
+    --db-text-size: .875rem;
+    --db-title-font: 'Open Sans Extrabold', sans-serif;
+    --db-title-size: 3.75rem;
+    --db-section-title-font: 'Open Sans', sans-serif;
+    --db-section-title-weight: bold;
+    --db-section-title-size: 2rem;
+    --db-subtitle-font: 'Open Sans', sans-serif;
+    --db-subtitle-weight: bold;
+    --db-subtitle-size: 1.25rem;
+    --db-accent-text-font: 'Open Sans', sans-serif;
+    --db-accent-text-weight: bold;
+    --db-accent-text-size: .75rem;
+    --db-description-font: 'Open Sans', sans-serif;
+    --db-description-size: .75rem;
+    --db-description-color: #5e5e5e;
+}
+
+header{
+    height: 65px;
+    padding: 0 0.5rem;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--db-text-font);
+    font-size: var(--db-text-size);
+}
+
+.btn{
+    background-color: var(--db-accent);
+    color: white;
+    padding: 0.25rem 0.75rem;
+}
+
+main{
+    background-color: #5e5e5e;
+    width: 100%;
+    height: 590px;
+    opacity: 25%;
+}
+
+.jumbo{
+    width: 63%;
+    margin: auto;
+    background-color: #5e5e5e;
+    opacity: 25%;
+    height: 500px;
+}
+
+.main{
+    width: 52%;
+    margin: auto;
+    background-color: #5e5e5e;
+    opacity: 25%;
+    height: 500px;
+}
+/* #endregion utilities */
+
+/* #region header */
+nav>div{
+    line-height: 65px;
+}
+
+nav img{
+    width: 100px;
+    vertical-align: middle;
+}
+
+nav a{
+    margin: 0 0.5rem;
+}
+/* #endregion header */
+
