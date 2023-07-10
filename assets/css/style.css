@@ -67,9 +67,6 @@ a{
 .container-s{
     width: 52%;
     margin: auto;
-    background-color: #5e5e5e;
-    opacity: 25%;
-    height: 500px;
 }
 
 h1{
@@ -77,6 +74,35 @@ h1{
     font-size: var(--db-title-size);
     padding-top: 3rem;
     margin-bottom: 2rem;
+}
+
+h3{
+    font-family: var(--db-section-title-font);
+    font-size: var(--db-section-title-size);
+    font-weight: var(--db-section-title-weight);
+    margin-bottom: 2rem;
+}
+
+h5{
+    font-family: var(--db-subtitle-font);
+    font-size: var(--db-subtitle-size);
+    font-weight: var(--db-subtitle-weight);
+}
+
+.accent-text{
+    font-family: var(--db-accent-text-font);
+    font-size: var(--db-accent-text-size);
+    font-weight: var(--db-accent-text-weight);
+}
+
+.description{
+    font-family: var(--db-description-font);
+    font-size: var(--db-description-size);
+    color: var(--db-description-color);
+}
+
+section{
+    margin-top: 5rem;
 }
 
 .col-4{
@@ -88,6 +114,17 @@ h1{
 }
 
 p{
+    font-family: var(--db-text-font);
+    font-size: var(--db-text-size);
+}
+
+label{
+    font-family: var(--db-text-font);
+    font-size: var(--db-text-size);
+    margin-right: 2rem;
+}
+
+span{
     font-family: var(--db-text-font);
     font-size: var(--db-text-size);
 }
@@ -131,4 +168,34 @@ nav a{
 
 .jumbotron i{
     font-size: 2.5rem;
+}
+
+.radio{
+    margin-bottom: 2rem;
+}
+
+.plans{
+    gap: 2rem;
+}
+
+.card{
+    border: 2px solid rgb(209, 209, 209);
+}
+
+.card i{
+    font-size: var(--db-text-size);
+}
+
+.card-title{
+    text-align: center;
+    border-bottom: 2px solid rgb(209, 209, 209);
+    padding: 0.5rem 0;
+}
+
+.card-description{
+    padding: 1.5rem;
+}
+
+.card-description > div{
+    margin: 0.75rem 0;
 }
