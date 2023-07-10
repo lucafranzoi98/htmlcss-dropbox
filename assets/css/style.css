@@ -54,6 +54,11 @@ a{
     padding: 0.5rem 0.75rem;
 }
 
+.btn-outline{
+    border: 1px solid black;
+    padding: 0.5rem 0.75rem;
+}
+
 .btn-s{
     padding: 0.25rem 0.75rem;
 }
@@ -233,4 +238,20 @@ nav a{
 
 .col-xl p{
     margin-top: 3rem;
+}
+
+.partner{
+    margin: 10rem 0;
+}
+
+.partner > img{
+    width: 60%;
+}
+
+.partner>div{
+    padding: 3rem;
+}
+
+.partner p{
+    margin: 1rem 0 2rem 0;
 }
