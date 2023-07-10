@@ -34,11 +34,19 @@
     --db-member-6: #b5d1e7;
     --db-member-7: #0d2580;
     --db-member-8: #ffd931;
+    --db-free-try-color: #621030;
 }
 
 header{
     height: 65px;
     padding: 0 0.5rem;
+}
+
+footer{
+    margin-top: 8rem;
+    height: 500px;
+    background-color: black;
+    width: 100%;
 }
 
 nav{
@@ -82,6 +90,13 @@ a{
     color: white;
     padding: 0.5rem 0;
     margin-bottom: 2rem;
+}
+
+.btn-white{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem 0;
 }
 
 .container-lg{
@@ -158,15 +173,6 @@ label{
 
 .relative{
     position: relative;
-}
-
-svg{
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: invert(1);
 }
 /* #endregion utilities */
 
@@ -282,9 +288,12 @@ nav a{
 }
 
 .operation{
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 3rem;
-    margin-bottom: 10rem;
+}
+
+.operation:last-of-type{
+    margin-bottom: 10rem;   
 }
 
 .operation  img{
@@ -297,11 +306,34 @@ nav a{
 
 .members-section{
     margin-top: 7rem;
+    background-color: var(--db-background-member);
 }
 
 .member-logo{
     width: 50%;
     aspect-ratio: 1;
+}
+
+
+.member-logo>svg{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}
+
+.member-center{
+    padding: 1rem 2rem;
+}
+
+.member-center svg{
+    width: 50%;
+}
+
+.member-center p{
+    margin: 2rem 0;
 }
 
 .m1{
@@ -334,4 +366,27 @@ nav a{
 
 .m8{
     background-color: var(--db-member-8);
+}
+
+.free-try{
+    background-color: var(--db-primary);
+    padding: 5rem 0;
+    margin-bottom: 8rem;
+}
+
+.free-try h3{
+    color: var(--db-free-try-color);
+}
+
+.free-try .container-s{
+    gap: 2rem;
+}
+
+.free-try .col-8{
+    padding-right: 3rem;
+}
+
+.faq{
+    justify-content: space-between;
+    margin: 2rem 0;
 }
