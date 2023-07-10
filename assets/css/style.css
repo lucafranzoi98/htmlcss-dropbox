@@ -64,7 +64,7 @@ a{
     background-color: var(--db-accent);
     color: white;
     padding: 0.5rem 0;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .container-lg{
@@ -102,12 +102,14 @@ h5{
     font-family: var(--db-accent-text-font);
     font-size: var(--db-accent-text-size);
     font-weight: var(--db-accent-text-weight);
+    margin-top: 1rem;
 }
 
 .description{
     font-family: var(--db-description-font);
     font-size: var(--db-description-size);
     color: var(--db-description-color);
+    margin-top: 1rem;
 }
 
 section{
@@ -129,6 +131,7 @@ p, li, span, label{
 
 label{
     margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 .default-link{
@@ -187,6 +190,7 @@ nav a{
 
 .card{
     border: 2px solid rgb(209, 209, 209);
+    margin-bottom: 2rem;
 }
 
 .card i{
@@ -203,13 +207,9 @@ nav a{
     padding: 1.5rem;
 }
 
-.card-description > div{
-    margin: 0.75rem 0;
-}
-
 .fa-ul{
     --fa-li-margin: 1.5rem;
-    margin-top: 2rem;
+    margin: 2rem 0;
  }
 
  .fa-ul > li{
@@ -225,4 +225,12 @@ nav a{
 
 .fa-check{
     color: var(--db-accent);
+}
+
+.col-xl{
+    gap: 10rem;
+}
+
+.col-xl p{
+    margin-top: 3rem;
 }
