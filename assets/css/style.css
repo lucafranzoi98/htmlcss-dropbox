@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* #region utilities */
 :root{
     --db-accent: #0061ff;
+    --db-accent-hover: #4e8ff7;   
     --db-primary: #b5d0e6;
     --db-secondary: #61082b;
     --db-background-member: #f5f4f4;
@@ -35,11 +37,17 @@
     --db-member-7: #0d2580;
     --db-member-8: #ffd931;
     --db-free-try-color: #621030;
+    --db-border-color: rgb(209, 209, 209);
 }
 
 header{
     height: 65px;
     padding: 0 0.5rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 10px var(--db-border-color);
+    z-index: 1;
 }
 
 nav{
@@ -161,6 +169,11 @@ h5{
     padding: 0.25rem 0.75rem;
 }
 
+.btn-header:hover, .btn-jumbo:hover, .btn-central:hover{
+    background-color: var(--db-accent-hover);
+    transition-duration: 0.2s;
+}
+
 .btn-jumbo{
     background-color: var(--db-accent);
     color: white;
@@ -179,6 +192,12 @@ h5{
     border: 1px solid black;
     padding: 0.5rem 0.75rem;
     color: black;
+}
+
+.btn-outline:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.2s;
 }
 
 .btn-white{
@@ -212,6 +231,14 @@ nav a{
     margin: 0 0.5rem;
     color: black;
 }
+
+.underline{
+    height: 65px;
+}
+
+.underline:hover{
+    border-bottom: 2px solid black;
+}
 /* #endregion header */
 
 /* #region main */
@@ -222,8 +249,13 @@ nav a{
     margin-bottom: 5rem;
 }
 
-.jumbotron i{
+.fa-arrow-down{
     font-size: 2.5rem;
+    color: black;
+}
+
+#arrow-link{
+    scroll-margin-top: 5rem;
 }
 
 label{
@@ -231,7 +263,7 @@ label{
 }
 
 .card{
-    border: 2px solid rgb(209, 209, 209);
+    border: 2px solid var(--db-border-color)
 }
 
 .card i{
@@ -240,7 +272,7 @@ label{
 
 .card-title{
     text-align: center;
-    border-bottom: 2px solid rgb(209, 209, 209);
+    border-bottom: 2px solid var(--db-border-color);
     padding: 0.5rem 0;
 }
 
@@ -258,7 +290,7 @@ label{
 
  .card-line{
     border: 0;
-    border-top: 2px solid rgb(209, 209, 209);
+    border-top: 2px solid var(--db-border-color);
     width: 50px;
 }
 

@@ -14,19 +14,33 @@
 
     <header>
         <nav class="flex">
-            <div class="left-menu">
+            <div class="left-menu flex">
                 <a href="#">
                     <img src="./assets/img/logo-small.png" alt="dropbox-logo">
                 </a>
-                <a href="#">Perché Dropbox</a>
-                <a href="#">Funzioni</a>
-                <a href="#">Piani e Prezzi</a>
+                <div class="underline">
+                    <a href="#">Perché Dropbox</a>
+                </div>
+                <div class="underline">
+                    <a href="#">Funzioni</a>
+                </div>
+                <div class="underline">
+                    <a href="#">Piani e Prezzi</a>
+                </div>
             </div>
-            <div class="right-menu">
-                <a href="#">Supporto</a>
-                <a href="#">Contatta l'ufficio vendite</a>
-                <a href="#">Accedi</a>
-                <a href="#" class="btn-header">Inizia</a>
+            <div class="right-menu flex">
+                <div class="underline">
+                    <a href="#">Supporto</a>
+                </div>
+                <div class="underline">
+                    <a href="#">Contatta l'ufficio vendite</a>
+                </div>
+                <div class="underline">
+                    <a href="#">Accedi</a>
+                </div>
+                <div>
+                    <a href="#" class="btn-header">Inizia</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -47,7 +61,7 @@
                         <p class="mb-3">
                             Annulla in qualsiasi momento
                         </p>
-                        <i class="fa-solid fa-arrow-down"></i>
+                        <a href="#arrow-link"><i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                     <div class="col-8">
                         <img src="./assets/img/jumbo.png" alt="jumbotron">
@@ -59,7 +73,7 @@
         <div class="container-s">
 
             <!-- Plans Section -->
-            <section>
+            <section id="arrow-link">
                 <h3 class="mb-2">Trova il piano business che fa per te</h3>
                 <div class="radio mb-2">
                     <input type="radio" name="fatturazione" id="mensile">
