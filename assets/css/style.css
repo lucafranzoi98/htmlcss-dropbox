@@ -42,11 +42,6 @@ header{
     padding: 0 0.5rem;
 }
 
-footer{
-    margin-top: 8rem;
-    background-color: black;
-}
-
 nav{
     justify-content: space-between;
 }
@@ -59,42 +54,16 @@ nav{
     flex-wrap: wrap;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    font-family: var(--db-text-font);
-    font-size: var(--db-text-size);
+.fd-col{
+    flex-direction: column;
 }
 
-.btn{
-    background-color: var(--db-accent);
-    color: white;
-    padding: 0.5rem 0.75rem;
+.inblock{
+    display: inline-block;
 }
 
-.btn-outline{
-    border: 1px solid black;
-    padding: 0.5rem 0.75rem;
-}
-
-.btn-s{
-    padding: 0.25rem 0.75rem;
-}
-
-.btn-central{
-    text-align: center;
-    width: 100%;
-    background-color: var(--db-accent);
-    color: white;
-    padding: 0.5rem 0;
-    margin-bottom: 2rem;
-}
-
-.btn-white{
-    text-align: center;
-    width: 100%;
-    background-color: white;
-    padding: 0.5rem 0;
+.relative{
+    position: relative;
 }
 
 .container-lg{
@@ -102,28 +71,57 @@ a{
     margin: auto;
 }
 
-.jumbotron .container-lg{
-    height: 570px;
-
-}
-
 .container-s{
     width: 57%;
     margin: auto;
 }
 
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-15{
+    margin-bottom: 1.5rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+.gap2{
+    gap: 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a, p, li, span, label{
+    font-family: var(--db-text-font);
+    font-size: var(--db-text-size);
+}
+
 h1{
     font-family: var(--db-title-font);
     font-size: var(--db-title-size);
-    padding-top: 3rem;
-    margin-bottom: 2rem;
 }
 
 h3{
     font-family: var(--db-section-title-font);
     font-size: var(--db-section-title-size);
     font-weight: var(--db-section-title-weight);
-    margin-bottom: 2rem;
 }
 
 h5{
@@ -136,18 +134,12 @@ h5{
     font-family: var(--db-accent-text-font);
     font-size: var(--db-accent-text-size);
     font-weight: var(--db-accent-text-weight);
-    margin-top: 1rem;
 }
 
 .description{
     font-family: var(--db-description-font);
     font-size: var(--db-description-size);
     color: var(--db-description-color);
-    margin-top: 1rem;
-}
-
-section{
-    margin-top: 5rem;
 }
 
 .col-4{
@@ -158,23 +150,51 @@ section{
     width: calc(100% / 12 * 8);
 }
 
-p, li, span, label{
-    font-family: var(--db-text-font);
-    font-size: var(--db-text-size);
-}
-
-label{
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-}
-
 .default-link{
     color: #0000EE;
     text-decoration: underline;
 }
 
-.relative{
-    position: relative;
+.btn-header{
+    background-color: var(--db-accent);
+    color: white;
+    padding: 0.25rem 0.75rem;
+}
+
+.btn-jumbo{
+    background-color: var(--db-accent);
+    color: white;
+    padding: 0.5rem 0.75rem;
+}
+
+.btn-central{
+    text-align: center;
+    width: 100%;
+    background-color: var(--db-accent);
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.btn-outline{
+    border: 1px solid black;
+    padding: 0.5rem 0.75rem;
+    color: black;
+}
+
+.btn-white{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem 0;
+    color: black;
+}
+
+section{
+    margin-bottom: 10rem;
+}
+
+footer{
+    background-color: black;
 }
 /* #endregion utilities */
 
@@ -190,45 +210,28 @@ nav img{
 
 nav a{
     margin: 0 0.5rem;
+    color: black;
 }
 /* #endregion header */
 
 /* #region main */
 .jumbotron{
     background-color: var(--db-primary);
-}
-
-.jumbotron img{
-    width: 100%;
-}
-
-.jumbotron p{
-    margin: 2rem 0;
-}
-
-.jumbotron p:first-of-type{
-    margin-top: 0;
-}
-
-.jumbotron p:last-of-type{
-    margin-bottom: 3rem;
+    height: 570px;
+    padding-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 .jumbotron i{
     font-size: 2.5rem;
 }
 
-.radio{
-    margin-bottom: 2rem;
-}
-
-.plans{
-    gap: 2rem;
+label{
+    margin-right: 2rem;
 }
 
 .card{
     border: 2px solid rgb(209, 209, 209);
-    margin-bottom: 2rem;
 }
 
 .card i{
@@ -247,7 +250,6 @@ nav a{
 
 .fa-ul{
     --fa-li-margin: 1.5rem;
-    margin: 2rem 0;
  }
 
  .fa-ul > li{
@@ -255,7 +257,6 @@ nav a{
  }
 
  .card-line{
-    margin: 2rem 0;
     border: 0;
     border-top: 2px solid rgb(209, 209, 209);
     width: 50px;
@@ -269,53 +270,10 @@ nav a{
     gap: 10rem;
 }
 
-.col-xl p{
-    margin-top: 3rem;
-}
-
-.partner{
-    margin: 10rem 0;
-}
-
-.partner > img{
-    width: 60%;
-}
-
-.partner>div{
-    padding: 3rem;
-}
-
-.partner p{
-    margin: 1rem 0 2rem 0;
-}
-
-.operation{
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.operation:last-of-type{
-    margin-bottom: 10rem;   
-}
-
-.operation  img{
-    width: 100%;
-}
-
-.operation h5{
-    margin: 1rem 0;
-}
-
-.members-section{
-    margin-top: 7rem;
-    background-color: var(--db-background-member);
-}
-
 .member-logo{
     width: 50%;
     aspect-ratio: 1;
 }
-
 
 .member-logo>svg{
     width: 50%;
@@ -328,14 +286,11 @@ nav a{
 
 .member-center{
     padding: 1rem 2rem;
+    background-color: var(--db-background-member);
 }
 
 .member-center svg{
     width: 50%;
-}
-
-.member-center p{
-    margin: 2rem 0;
 }
 
 .m1{
@@ -373,15 +328,10 @@ nav a{
 .free-try{
     background-color: var(--db-primary);
     padding: 5rem 0;
-    margin-bottom: 8rem;
 }
 
 .free-try h3{
     color: var(--db-free-try-color);
-}
-
-.free-try .container-s{
-    gap: 2rem;
 }
 
 .free-try .col-8{
@@ -395,24 +345,20 @@ nav a{
 /* #endregion main */
 
 /* #region footer */
-footer a{
-    color: white;
-}
-
-.fd-col{
-    flex-direction: column;
-}
-
 .site-map{
     padding: 6rem 0;
     justify-content: space-between;
     line-height: 2rem;
 }
 
+.site-map a{
+    color: white;
+}
+
 .fd-col a:first-child{
     font-size: var(--db-subtitle-size);
     font-weight: var(--db-subtitle-weight);
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 footer hr{
