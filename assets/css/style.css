@@ -374,6 +374,19 @@ label{
     justify-content: space-between;
     margin: 2rem 0;
 }
+
+.answer{
+    display: none;
+    margin-right: 6rem;
+}
+
+.faq:hover + .answer{
+    display: block;
+}
+
+.faq:hover .fa-chevron-down{
+    transform: rotate(180deg);
+}
 /* #endregion main */
 
 /* #region footer */
@@ -385,12 +398,46 @@ label{
 
 .site-map a{
     color: white;
+	position: relative;
 }
 
-.fd-col a:first-child{
+.of-hidden{
+    overflow: hidden;
+}
+
+.site-map-section{
     font-size: var(--db-subtitle-size);
     font-weight: var(--db-subtitle-weight);
-    margin-bottom: 1.5rem;
+}
+
+.site-map-section::after, .site-map-page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+
+.site-map-section::after{
+    top: 1.75rem;
+}
+
+.site-map-page::after{
+    top: 1.25rem;
+}
+
+.site-map-section:hover::after, .site-map-section:focus::after{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.site-map-page:hover::after, .site-map-page:focus::after{
+    transform: translate(0, 0);
+    opacity: 1;
 }
 
 footer hr{
