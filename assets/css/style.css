@@ -44,9 +44,7 @@ header{
 
 footer{
     margin-top: 8rem;
-    height: 500px;
     background-color: black;
-    width: 100%;
 }
 
 nav{
@@ -102,7 +100,11 @@ a{
 .container-lg{
     width: 67%;
     margin: auto;
+}
+
+.jumbotron .container-lg{
     height: 570px;
+
 }
 
 .container-s{
@@ -383,10 +385,49 @@ nav a{
 }
 
 .free-try .col-8{
-    padding-right: 3rem;
+    padding-right: 6rem;
 }
 
 .faq{
     justify-content: space-between;
     margin: 2rem 0;
 }
+/* #endregion main */
+
+/* #region footer */
+footer a{
+    color: white;
+}
+
+.fd-col{
+    flex-direction: column;
+}
+
+.site-map{
+    padding: 6rem 0;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+.fd-col a:first-child{
+    font-size: var(--db-subtitle-size);
+    font-weight: var(--db-subtitle-weight);
+    padding-bottom: 1.5rem;
+}
+
+footer hr{
+    width: 100px;
+}
+
+.language{
+    padding: 3rem 0;
+}
+
+.language a{
+    color: var(--db-description-color);
+}
+
+.language a:first-child{
+    margin-right: 0.5rem;
+}
+/* #endregion footer */
