@@ -13,7 +13,7 @@
     --db-secondary: #61082b;
     --db-background-member: #f5f4f4;
     --db-text-font: 'Open Sans', sans-serif;
-    --db-text-size: .875rem;
+    --db-text-size: .8125rem;
     --db-title-font: 'Open Sans Extrabold', sans-serif;
     --db-title-size: 3.75rem;
     --db-section-title-font: 'Open Sans', sans-serif;
@@ -24,7 +24,7 @@
     --db-subtitle-size: 1.25rem;
     --db-accent-text-font: 'Open Sans', sans-serif;
     --db-accent-text-weight: bold;
-    --db-accent-text-size: .75rem;
+    --db-accent-text-size: .6875rem;
     --db-description-font: 'Open Sans', sans-serif;
     --db-description-size: .75rem;
     --db-description-color: #5e5e5e;
@@ -42,8 +42,7 @@
 
 header{
     height: 65px;
-    padding: 0 0.5rem;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     background-color: white;
     box-shadow: 0 0 10px var(--db-border-color);
@@ -71,17 +70,25 @@ nav{
 }
 
 .container-lg{
-    width: 67%;
+    width: 63%;
     margin: auto;
 }
 
 .container-s{
-    width: 57%;
+    width: 52%;
     margin: auto;
 }
 
 .mt-3{
     margin-top: 3rem;
+}
+
+.mb-05{
+    margin-bottom: 0.5rem;
+}
+
+.mb-075{
+    margin-bottom: 0.75rem;
 }
 
 .mb-1{
@@ -92,6 +99,10 @@ nav{
     margin-bottom: 1.5rem;
 }
 
+.mb-25{
+    margin-bottom: 2.5rem;
+}
+
 .mb-2{
     margin-bottom: 2rem;
 }
@@ -100,8 +111,16 @@ nav{
     margin-bottom: 3rem;
 }
 
+.gap1{
+    gap: 1rem;
+}
+
 .gap2{
     gap: 2rem;
+}
+
+.gap25{
+    gap: 2.5rem;
 }
 
 img{
@@ -182,6 +201,7 @@ h5{
     background-color: var(--db-accent);
     color: white;
     padding: 0.5rem 0;
+    font-size: var(--db-accent-text-size);
 }
 
 .btn-outline{
@@ -205,11 +225,12 @@ h5{
 }
 
 section{
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
 }
 
 footer{
     background-color: black;
+    padding-top: 5rem;
 }
 /* #endregion utilities */
 
@@ -224,8 +245,15 @@ nav img{
 }
 
 nav a{
-    margin: 0 0.5rem;
     color: black;
+}
+
+.left-menu a{
+    margin: 0 1rem;
+}
+
+.right-menu a{
+    margin: 0 0.75rem;
 }
 
 .underline{
@@ -240,9 +268,14 @@ nav a{
 /* #region main */
 .jumbotron{
     background-color: var(--db-primary);
-    height: 570px;
-    padding-top: 3rem;
-    margin-bottom: 5rem;
+    height: 580px;
+    padding-top: 4rem;
+    margin-bottom: 7.5rem;
+}
+
+.jumbotron img{
+    width: 110%;
+    margin-left: -3rem;
 }
 
 .fa-arrow-down{
@@ -256,20 +289,21 @@ nav a{
 
 label{
     margin-right: 2rem;
+    font-size: var(--db-accent-text-size);
 }
 
 .card{
     border: 2px solid var(--db-border-color)
 }
 
-.card i{
-    font-size: var(--db-text-size);
+.card i, .card li, .card span, .card a, .card p{
+    font-size: var(--db-accent-text-size);
 }
 
 .card-title{
     text-align: center;
     border-bottom: 2px solid var(--db-border-color);
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
 
 .card-description{
@@ -277,17 +311,17 @@ label{
 }
 
 .fa-ul{
-    --fa-li-margin: 1.5rem;
+    --fa-li-margin: 0.75rem;
  }
 
  .fa-ul > li{
-    margin: 1rem 0;
+    margin: 0.85rem 0;
  }
 
  .card-line{
     border: 0;
     border-top: 2px solid var(--db-border-color);
-    width: 50px;
+    width: 40px;
 }
 
 .fa-check{
@@ -311,7 +345,7 @@ label{
 
 .member-logo{
     width: 50%;
-    aspect-ratio: 1;
+    height: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -373,7 +407,7 @@ label{
 
 .free-try{
     background-color: var(--db-primary);
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .free-try h3{
@@ -405,7 +439,7 @@ label{
 
 /* #region footer */
 .site-map{
-    padding: 6rem 0;
+    padding-bottom: 6rem;
     justify-content: space-between;
     line-height: 2rem;
 }
@@ -459,7 +493,7 @@ footer hr{
 }
 
 .language{
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .language a{
